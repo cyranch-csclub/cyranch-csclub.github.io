@@ -1,0 +1,25 @@
+{
+  "name": "cyranch-csclub.github.io",
+  "version": "1.0.0",
+  "description": "The official club-run website for Cypress Ranch CS Club.",
+  "homepage": "https://github.com/cyranch-csclub/cyranch-csclub.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/cyranch-csclub/cyranch-csclub.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyranch-csclub/cyranch-csclub.github.io.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "buildcss": "tailwindcss -i css/in.css -o css/out.css",
+    "serve": "npx http-server ."
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.8",
+    "tailwindcss": "^4.1.8"
+  }
+}

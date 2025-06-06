@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypress Ranch CS Club</title>
+    <link rel="icon" type="image/png" href="images/logo.webp">
+    <link rel="stylesheet" href="css/out.css">
+</head>
+<body>
+    <!-- Black background -->
+    <div class="fixed inset-0 z-0 bg-black"></div>
+    <!-- Background grid -->
+    <div id="background-grid" class="fixed inset-0 z-10 grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 opacity-30 lazy-bg" ></div>
+    <!-- Dark blue overlay -->
+    <div class="fixed inset-0 z-20 bg-slate-900/80"></div>
+    <!-- Content -->
+    <div class="relative z-30 min-h-screen text-slate-100 p-8">
+        <h1 class="text-4xl font-bold text-blue-400 mb-8 text-center">Cypress Ranch CS Club</h1>
+        
+        <div class="max-w-5xl mx-auto space-y-8">
+            <!-- 2x2 grid for main sections -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- about us (top left) -->
+                <div class="bg-slate-800 p-6 rounded-lg shadow-lg h-full border border-blue-400/20 hover:border-blue-400/40 transition-colors">
+                    <h2 class="text-2xl font-semibold text-blue-300 mb-4 flex items-center gap-2">
+                        <span class="text-yellow-400">✦</span> Welcome to the Cypress Ranch CS Club!
+                    </h2>
+                    <p class="text-slate-300">[put description here]</p>
+                </div>
+
+                <!-- contact us (top right) -->
+                <div class="bg-slate-800 p-6 rounded-lg shadow-lg h-full border border-blue-400/20 hover:border-blue-400/40 transition-colors">
+                    <h2 class="text-2xl font-semibold text-blue-300 mb-4 flex items-center gap-2">
+                        <span class="text-yellow-400">✦</span> Contact Us
+                    </h2>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2">
+                            <span class="text-slate-300">Instagram:</span>
+                            <a href="https://www.instagram.com/crcsclub/" class="text-blue-400 hover:text-yellow-400 transition-colors">@crcsclub</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-slate-300">Discord:</span>
+                            <a href="https://discord.gg/ccEptbzSh3" class="text-blue-400 hover:text-yellow-400 transition-colors">Join our Discord</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-slate-300">Email:</span>
+                            <a href="mailto:crhcsclub@gmail.com" class="text-blue-400 hover:text-yellow-400 transition-colors">crhcsclub@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- sponsors (bottom right) -->
+                <div class="bg-slate-800 p-6 rounded-lg shadow-lg h-full border border-blue-400/20 hover:border-blue-400/40 transition-colors">
+                    <h2 class="text-2xl font-semibold text-blue-300 mb-4 flex items-center gap-2">
+                        <span class="text-yellow-400">✦</span> Sponsors
+                    </h2>
+                    <ul class="list-disc space-y-2 pl-6">
+                        <li>
+                            <a href="mailto:bryce.hulett@cfisd.net" class="text-blue-400 hover:text-yellow-400 transition-colors">Bryce Hulett</a>
+                        </li>
+                        <li>
+                            <a href="mailto:john.cargill@cfisd.net" class="text-blue-400 hover:text-yellow-400 transition-colors">John Cargill</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- officers (bottom left) -->
+                <div class="bg-slate-800 p-6 rounded-lg shadow-lg h-full border border-blue-400/20 hover:border-blue-400/40 transition-colors">
+                    <h2 class="text-2xl font-semibold text-blue-300 mb-4 flex items-center gap-2">
+                        <span class="text-yellow-400">✦</span> Officers
+                    </h2>
+                    <ul class="space-y-2 text-slate-300 list-disc pl-6">
+                        <li>President: <span class="text-yellow-400">Shubh Randeria</span></li>
+                        <li>Vice President: <span class="text-yellow-400">Parth Zanwar</span></li>
+                        <li>Secretary: <span class="text-yellow-400">Atharva Nalawade</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- highlighted projects (full width) -->
+            <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-blue-400/20 hover:border-blue-400/40 transition-colors">
+                <h2 class="text-2xl font-semibold text-blue-300 mb-4 flex items-center gap-2">
+                    <span class="text-yellow-400">✦</span> Highlighted Projects
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="relative bg-slate-800 rounded-lg overflow-hidden group border border-blue-400/20 hover:border-blue-400/40 transition-colors">
+                        <img src="images/projects/rdf3d.webp" alt="Project thumbnail" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-blue-400 mb-2">Reaction Diffusion 3D</h3>
+                            <p class="text-slate-300 mb-4">Procedurally generating 3D models by numerically solving the Gray-Scott Reaction Diffusion PDEs.</p>
+                            <a href="https://github.com/tvumcc/reaction-diffusion-3D" target="_blank" rel="noopener noreferrer" class="inline-block text-blue-400 hover:text-yellow-400 transition-colors">View Project →</a>
+                        </div>
+                    </div>
+
+                    <div class="relative bg-slate-800 rounded-lg overflow-hidden group border border-blue-400/20 hover:border-blue-400/40 transition-colors">
+                        <img src="images/projects/mazes.webp" alt="Project thumbnail" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-blue-400 mb-2">Mazes</h3>
+                            <p class="text-slate-300 mb-4">A small maze generation and playground application, built with Swift and Metal.</p>
+                            <a href="https://github.com/acemavrick/Mazes" target="_blank" rel="noopener noreferrer" class="inline-block text-blue-400 hover:text-yellow-400 transition-colors">View Project →</a>
+                        </div>
+                    </div>
+
+                    <div class="relative bg-slate-800 rounded-lg overflow-hidden group border border-blue-400/20 hover:border-blue-400/40 transition-colors">
+                        <img src="images/projects/uildl.webp" alt="Project thumbnail" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-blue-400 mb-2">uil-dl</h3>
+                            <p class="text-slate-300 mb-4">A tool enabling easy and bulk download of UIL Academics contest materials and data files.</p>
+                            <a href="https://github.com/acemavrick/uil-dl" target="_blank" rel="noopener noreferrer" class="inline-block text-blue-400 hover:text-yellow-400 transition-colors">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/background.js"></script>
+    <script src="js/lazy-bg.js"></script>
+</body>
+</html>
